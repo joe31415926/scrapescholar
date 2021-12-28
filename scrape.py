@@ -6,7 +6,7 @@ import urllib.parse
 # define header to access google scholar website
 headers = {'user-agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36'}
 
-def get_paperinfo(paper_url):
+def get_paperinfo(url):
 
   #download the page
   response=requests.get(url,headers=headers)
@@ -26,3 +26,10 @@ print('search term: ' + sys.argv[1])
 url = f"https://scholar.google.com/scholar?q=" + urllib.parse.quote_plus(sys.argv[1]) + "&hl=en&as_sdt=0&as_vis=1&oi=scholart"
 print('url: ' + url)
 
+doc = get_paperinfo(url)
+
+authors_tag = doc.find_all("div", {"class": "gs_a"})
+for i in range(len(authors_tag)):
+  authortag_text = (authors_tag[i].text).split()
+  stupid=','
+  print(f"author {i}: " + stupid.join(authortag_text))
