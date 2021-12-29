@@ -79,3 +79,41 @@ url: https://scholar.google.com/scholar?q=indigenous+%22impact+measurement%22+so
 
 This approach relies on the Beautiful Soup module parsing (scraping) the webpage properly:
 [https://www.crummy.com/software/BeautifulSoup/bs4/doc/]
+
+
+Because Google sometimes bocks us when we do a lot of testing, just use this test harness while developing new code. The test harness just reads a webpage which has been saved locally on the hard disk: `index.html`
+
+```
+joeruff@Josephs-MacBook-Pro scrapescholar % python3 test.py                                            
+paper: Critical success factors in managing sustainable indigenous businesses in Australia
+paper: Social impact measurement: Classification of methods
+paper: Corporate environmental impact: measurement, data and information
+paper: Using accountability to shape the common good
+paper: Towards an accounting of socio-environmental conflicts in South America
+paper: Full Cost Accounting—A Stepping Stone for Corporate Sustainability Reporting
+paper: Sustainability and accountability of social enterprise
+paper: Disclosures of social value creation: A case study of three global social enterprises
+paper: Accountability and the privateness of private ancillary funds
+paper: Literature Discourse
+link: Critical success factors in managing sustainable indigenous businesses in Australia
+link: Social impact measurement: Classification of methods
+link: Corporate environmental impact: measurement, data and information
+link: Using accountability to shape the common good
+link: Towards an accounting of socio-environmental conflicts in South America
+link: Full Cost Accounting—A Stepping Stone for Corporate Sustainability Reporting
+link: Sustainability and accountability of social enterprise
+link: Disclosures of social value creation: A case study of three global social enterprises
+link: Accountability and the privateness of private ancillary funds
+link: Literature Discourse
+author: K Bodle, M Brimble, S Weaven, L Frazer… - Pacific Accounting …, 2018 - emerald.com
+author: K Maas, K Liket - … management accounting and supply chain …, 2011 - Springer
+author: D Freiberg, DG Park, G Serafeim… - … School Accounting & …, 2021 - papers.ssrn.com
+author: C Pesci, E Costa, M Andreaus - Critical Perspectives on Accounting, 2020 - Elsevier
+author: M Gómez-Villegas - … Handbook of Environmental Accounting, 2021 - taylorfrancis.com
+author: K Chatterjee - Studies in Accounting and Finance: Contemporary …, 2010 - books.google.com
+author: NH Ab Samad, R Arshad, SH Asat… - … & Accounting Review …, 2017 - ir.uitm.edu.my
+author: MA Islam - … Asia Pacific Interdisciplinary Research in Accounting …, 2013 - papers.ssrn.com
+author: A Williamson, B Luke, C Furneaux - … Research in Accounting  …, 2016 - eprints.qut.edu.au
+author: F Oladele, TG Oyewole - … and Cloud Technology Use in Accounting …, 2020 - emerald.com
+joeruff@Josephs-MacBook-Pro scrapescholar % 
+```
