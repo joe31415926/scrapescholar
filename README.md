@@ -76,3 +76,6 @@ joeruff@Josephs-MacBook-Pro scrapescholar % python3 scrape.py 'indigenous "impac
 search term: indigenous "impact measurement" source:Accounting
 url: https://scholar.google.com/scholar?q=indigenous+%22impact+measurement%22+source%3AAccounting&hl=en&as_sdt=0&as_vis=1&oi=scholart
 ```
+
+This approach relies on the Beautiful Soup module parsing (scraping) the webpage properly:
+[https://www.crummy.com/software/BeautifulSoup/bs4/doc/]
