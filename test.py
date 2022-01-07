@@ -6,6 +6,7 @@ page_html = local_web_page_file.read()
 local_web_page_file.close()
 
 doc = BeautifulSoup(page_html, 'html.parser')
+print(doc.prettify())
 
 for idx, paper in enumerate(doc.select('[data-lid]')):
     print('paper: ' + paper.select('h3')[0].get_text())
